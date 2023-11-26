@@ -1,5 +1,5 @@
 # green-tile-project
-Super important project to paint the tiles green every single day
+Super important project to paint the tiles green every single day.
 
 ## What to do after clone
 1. Set up git credential store
