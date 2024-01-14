@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/project/green-tile-project/
+cd ~/2024/green-tile-project/
 echo 'Tile at location'  `date` 'painted' >> report.txt
 git pull
 git add .
