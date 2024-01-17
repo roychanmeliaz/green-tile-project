@@ -13,13 +13,12 @@ generate_random_number() {
     fi
 }
 
-# Loop 10 times
-for ((i=0; i<10; i++)); do
-    random_number=$(generate_random_number)
-    
-    # Your script with the random number
+# Loop based on the generated random number
+random_number=$(generate_random_number)
+for ((i=0; i<$random_number; i++)); do
+    # Your script with the current iteration number
     cd ~/2024/green-tile-project/
-    echo "Tile at location" $(date) "painted with random number: $random_number" >> report.txt
+    echo "Tile at location" $(date) "painted with random number: $i" >> report.txt
     git pull
     git add .
     git commit -m "Painting tile at $(date)"
